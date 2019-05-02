@@ -17,4 +17,8 @@ cd src
 ./redis-server
 sudo apt-get install maven
 
-
+ssh-keygen -t rsa -b 4096 -C "ixingo@126.com"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa
+git config --global user.name "Shawn Wang"
+git config --global user.email "ixingo@126.com"
