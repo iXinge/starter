@@ -16,7 +16,7 @@ make
 cd src
 ./redis-server
 sudo apt-get install maven
-
+sudo apt-get install node
 ssh-keygen -t rsa -b 4096 -C "ixingo@126.com"
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_rsa
