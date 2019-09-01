@@ -9,6 +9,11 @@ sudo apt-get install openjdk-8-jdk
 sudo apt-get install mysql-server
 sudo apt-get install nginx
 sudo mysql_secure_installation
+(
+-- CREATE USER 'dev'@'localhost' IDENTIFIED BY 'dev'; 
+GRANT EXECUTE,INSERT,SELECT,UPDATE ON *.* TO 'dev'@'localhost';
+-- GRANT privileges ON *.* TO 'dev'@'localhost';
+)
 wget http://download.redis.io/releases/redis-5.0.4.tar.gz
 tar -zxvf redis-5.0.4.tar.gz
 cd redis-5.0.4
