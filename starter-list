@@ -14,14 +14,11 @@ sudo mysql_secure_installation
 GRANT EXECUTE,INSERT,SELECT,UPDATE ON *.* TO 'dev'@'localhost';
 -- GRANT privileges ON *.* TO 'dev'@'localhost';
 )
-wget http://download.redis.io/releases/redis-5.0.4.tar.gz
-tar -zxvf redis-5.0.4.tar.gz
-cd redis-5.0.4
-make
-cd src
-./redis-server
+
+sudo apt-get install redis
 sudo apt-get install maven
 sudo apt-get install node
+sudo apt-get instsll mongo
 ssh-keygen -t rsa -b 4096 -C "ixingo@126.com"
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_rsa
