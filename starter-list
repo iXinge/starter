@@ -18,7 +18,7 @@ GRANT EXECUTE,INSERT,SELECT,UPDATE ON *.* TO 'dev'@'localhost';
 sudo apt-get install redis
 sudo apt-get install maven
 sudo apt-get install node
-sudo apt-get instsll mongo
+sudo apt-get install mongo
 ssh-keygen -t rsa -b 4096 -C "ixingo@126.com"
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_rsa
