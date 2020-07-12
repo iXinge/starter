@@ -1,2 +1,6 @@
 # starter
-A list to config a new host
+A template of command list to config a new host.
+
+Contains:
+- Develop env
+- Tools
