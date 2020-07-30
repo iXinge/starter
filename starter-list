@@ -10,8 +10,9 @@ sudo apt-get install mysql-server
 sudo apt-get install nginx
 sudo mysql_secure_installation
 (
--- CREATE USER 'dev'@'localhost' IDENTIFIED BY 'dev'; 
-GRANT EXECUTE,INSERT,SELECT,UPDATE ON *.* TO 'dev'@'localhost';
+-- CREATE USER 'dev'@'%' IDENTIFIED BY 'dev'; 
+GRANT CREATE,EXECUTE,INSERT,SELECT,UPDATE,DROP ON *.* TO 'dev'@'%';
+FLUSH PRIVILEGES;
 -- GRANT privileges ON *.* TO 'dev'@'localhost';
 )
 
