@@ -30,3 +30,8 @@ ssh-add ~/.ssh/id_rsa
 
 git config --global user.name "Shawn Wang"
 git config --global user.email "ixingo@126.com"
+# Rename the master to main branch
+git branch -m master main
+git push -u origin main
+# change default branch from master to main, example: https://github.com/iXingo/WebPage/settings/branches
+git push origin --delete master
