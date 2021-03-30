@@ -35,3 +35,8 @@ git branch -m master main
 git push -u origin main
 # change default branch from master to main, example: https://github.com/iXingo/WebPage/settings/branches
 git push origin --delete master
+# Or direct change from Github and then
+git branch -m master main
+git fetch origin
+git branch -u origin/main main
+git remote set-head origin -a
