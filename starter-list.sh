@@ -27,7 +27,8 @@ grant all privileges on *.* to dev@'localhost'
 
 sudo apt-get install redis
 sudo apt-get install maven
-sudo apt-get install node
+sudo apt-get install nodejs
+sudo apt-get install npm
 sudo apt-get install mongo
 
 
