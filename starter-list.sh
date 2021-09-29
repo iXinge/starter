@@ -17,6 +17,13 @@ FLUSH PRIVILEGES;
 -- GRANT privileges ON *.* TO 'dev'@'localhost';
 )
 
+# mysql 8:
+use mysql;
+update user set host='localhost' where user='dev';
+grant all privileges on *.* to dev@'localhost'
+
+
+
 
 sudo apt-get install redis
 sudo apt-get install maven
