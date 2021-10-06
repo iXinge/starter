@@ -10,6 +10,8 @@ sudo apt-get install openjdk-8-jdk
 sudo apt-get install mysql-server
 sudo apt-get install nginx
 sudo mysql_secure_installation
+
+
 (
 -- CREATE USER 'dev'@'%' IDENTIFIED BY 'dev'; 
 GRANT CREATE,EXECUTE,INSERT,SELECT,UPDATE,DROP,REFERENCE ON *.* TO 'dev'@'%';
@@ -17,7 +19,7 @@ FLUSH PRIVILEGES;
 -- GRANT privileges ON *.* TO 'dev'@'localhost';
 )
 
-# mysql 8:
+# mysql server 8 config
 use mysql;
 update user set host='localhost' where user='dev';
 grant all privileges on *.* to dev@'localhost'
