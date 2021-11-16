@@ -21,7 +21,7 @@ FLUSH PRIVILEGES;
 # mysql server 8 config
 use mysql;
 update user set host='localhost' where user='dev';
-ALTER USER 'dev'@'localhost' IDENTIFIED BY 'Dev123654_';
+ALTER USER 'dev'@'localhost' IDENTIFIED BY 'dev';
 grant all privileges on *.* to dev@'localhost'
 
 
