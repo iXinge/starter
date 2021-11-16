@@ -13,10 +13,9 @@ sudo mysql_secure_installation
 
 
 (
--- CREATE USER 'dev'@'%' IDENTIFIED BY 'dev'; 
-GRANT CREATE,EXECUTE,INSERT,SELECT,UPDATE,DROP,REFERENCE ON *.* TO 'dev'@'%';
+CREATE USER 'dev'@'%' IDENTIFIED BY 'dev'; 
+GRANT ALL ON *.* TO 'dev'@'%';
 FLUSH PRIVILEGES;
--- GRANT privileges ON *.* TO 'dev'@'localhost';
 )
 
 # mysql server 8 config
