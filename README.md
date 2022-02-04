@@ -1,10 +1,10 @@
 # starter
-A Shell template of command list to config a new host.
+A Shell template of command list to config a new host or server.
 
 Contains:
 - Develop env
 - Tools
 - Software
 - Programming Language Dev kit
-- Databse
+- Database
 - Cache Server
