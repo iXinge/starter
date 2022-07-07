@@ -52,3 +52,7 @@ git branch -u origin/main main
 git remote set-head origin -a
 # set mian as default branch 
 git config --global init.defaultBranch main
+
+
+#For Gnome preview like macOS
+sudo apt-get install gnome-sushi
