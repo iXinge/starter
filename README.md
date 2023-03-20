@@ -8,3 +8,7 @@ Contains:
 - Programming Language Dev kit
 - Database
 - Cache Server
+- Docker
+- Helm
+- Minikube
+- kubectl
