@@ -58,6 +58,8 @@ git config --global init.defaultBranch main
 sudo apt-get install gnome-sushi
 
 # install docker [Docker](https://docs.docker.com/engine/install/ubuntu/#set-up-the-repository)
+
+
 sudo apt-get update
 sudo apt-get install \
     ca-certificates \
@@ -72,6 +74,10 @@ echo \
 sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
+# post-installation
+sudo groupadd docker
+sudo usermod -aG docker $USER
+newgrp docker
 
 # minikube
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube_latest_amd64.deb
